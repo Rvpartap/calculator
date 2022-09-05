@@ -1,0 +1,46 @@
+<link href="calculator.css" rel="stylesheet" />
+<script src="calculator.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="container">
+    <form name="form" class="action">
+        <div id="displayArea">
+            <input class="InputScreen" name="area" value="" placeholder="0" disabled>
+        </div>
+        <table id="keypad-btns">
+            <tr>
+                <td><input type="button" class="fun-btn radius" value="CE" onclick="reset()"></td>
+                <td><input type="button" class="fun-btn" value="←" onclick="cancella();"></td>
+                <td><input type="button" class="fun-btn" value="/" onclick="dig('/');"></td>
+                <td><input type="button" class="fun-btn" value="*" onclick="dig('*');"></td>
+            </tr>       
+            <tr>
+                <td><input type="button" class="num-btn" value="7" onclick="dig(7);"></td>
+                <td><input type="button" class="num-btn" value="8" onclick="dig(8);"></td>
+                <td><input type="button" class="num-btn" value="9" onclick="dig(9);"></td>
+                <td><input type="button" class="fun-btn" value="-" onclick="dig('-');"></td>
+            </tr>      
+            <tr>
+                <td><input type="button" class="num-btn" value="4" onclick="dig(4);"></td>
+                <td><input type="button" class="num-btn" value="5" onclick="dig(5);"></td>
+                <td><input type="button" class="num-btn" value="6" onclick="dig(6);"></td>
+                <td><input type="button" class="fun-btn" value="+" onclick="dig('+');"></td>
+            </tr>      
+            <tr>
+                <td><input type="button" class="num-btn" value="1" onclick="dig(1);"></td>
+                <td><input type="button" class="num-btn" value="2" onclick="dig(2);"></td>
+                <td><input type="button" class="num-btn" value="3" onclick="dig(3);"></td>
+                <td rowspan="2"><input type="button" class="submit fun-btn" value="=" onclick="somma();"></td>
+            </tr>  
+            <tr>
+                <td><input type="button" class="num-btn radius" value="00" onclick="dig('00');"></td>
+                <td><input type="button" class="num-btn" value="0" onclick="dig(0);" ></td>
+                <td><input type="button" class="num-btn" value="."onclick="dig('.');"></td>
+            </tr>  
+        </table>
+    </form>
+    <p class="credit"><i class="fa-regular fa-copyright"></i> Made by Rathour Vinay <img class="credit-icon" src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/man-technologist_1f468-200d-1f4bb.png" draggable="false"></p>
+</div>
