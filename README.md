@@ -8,6 +8,6 @@ Spero che vi piaci ^^
 
 -rvpartap
 
-https://rvpartap.github.io/calculator/Souce/calculator.html
+https://rvpartap.github.io/calculator/Code/calculator.html
 
 ![The-Picture](https://user-images.githubusercontent.com/83447089/188483865-26cc3de1-555d-4528-b013-a0d35efea713.png)
